@@ -3,9 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sign In | ClearlyPlan</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="greeting"></div>
+      <ul id="navbar">
+        <li><a href="/code/index.html"></a>Home</li>
+        <li><a href="/code/calendar.html">Plan</a></li>
+        <li><a href="/code/relax.html">Relax</a></li>
+      </ul>
+    </header>
+    <main>
+      <div class="container" id="signin-fields">
+        <h1>Sign in to your ClearlyPlan account</h1>
+        <label for="username-email">Username/E-mail Address: </label>
+        <input
+          type="text"
+          id="username-email"
+          placeholder="Enter a username or valid e-mail address"
+        />
+        <label for="password">Password: </label>
+        <input type="password" id="password" />
+        <button id="sign-up-btn" type="submit">Sign In</button>
+      </div>
+    </main>
+  </body>
 </html>
 
 <!--sign-in field-->
