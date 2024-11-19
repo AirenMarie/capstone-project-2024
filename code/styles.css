@@ -2,3 +2,31 @@
 /* relaxing colors, images */
 /* sans-serif font may work best */
 /* light and dark modes */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#calendar-body {
+}
+
+#home-body {
+}
+
+#index-body {
+  background-image: url("/assets/main-page-image.png");
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+#relax-body {
+  background-image: url("/assets/relax-page-image.png");
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+#sign-in-body {
+}
+
+#sign-up-body {
+}
