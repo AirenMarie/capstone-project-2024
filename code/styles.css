@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+.page-body {
+  font-family: "ivysoft-variable", sans-serif;
+}
+
 /*#calendar-body {
 }
 
@@ -16,13 +20,13 @@
 #index-body {
   background-image: url("/assets/main-page-image.png");
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: 25%;
 }
 
 #relax-body {
   background-image: url("/assets/relax-page-image.png");
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: 25%;
 }
 
 /*#sign-in-body {
@@ -30,3 +34,23 @@
 
 #sign-up-body {
 }*/
+
+.greeting {
+  font-size: 2rem;
+  font-variation-settings: "slnt" 0, "wght" 650;
+}
+
+.navbar {
+  font-size: 1.5rem;
+  font-variation-settings: "slnt" 0, "wght" 700;
+}
+
+.navbar > li > a {
+  text-decoration: none;
+}
+
+.btn {
+  font-family: "ivysoft-variable", sans-serif;
+  font-size: 1.7rem;
+  font-variation-settings: "slnt" 0, "wght" 400;
+}
