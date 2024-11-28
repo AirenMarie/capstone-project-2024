@@ -8,20 +8,31 @@
     <title>Plan your day with a clear mind. | Clearly</title>
   </head>
   <body class="page-body" id="index-body">
-    <header>
+    <header class="page-header" id="index-header">
       <div class="greeting"></div>
-      <ul class="navbar">
-        <li><a href="/code/index.html"></a>Home</li>
-        <li><a href="/code/calendar.html">Plan</a></li>
-        <li><a href="/code/relax.html">Relax</a></li>
-      </ul>
+      <nav class="navbar">
+        <ul class="nav-links" id="index">
+          <li><a href="/code/index.html"></a>Home</li>
+          <li><a href="/code/calendar.html">Plan</a></li>
+          <li><a href="/code/relax.html">Relax</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
+      <img
+        src="/assets/main-page-image.png"
+        alt=""
+        class="page-accent"
+        id="index-accent"
+      />
+
+      <div class="container" id="welcome-block">
+        <h1 class="heading" id="welcome-heading">
+          Plan your day with a clear mind.
+        </h1>
+      </div>
       <section class="page-section" id="welcome">
-        <div class="container" id="welcome-block">
-          <h1 class="heading" id="welcome-heading">
-            Plan your day with a clear mind.
-          </h1>
+        <div class="container" id="welcome-descriptor">
           <p>
             ClearlyPlan is more than just a task manager. It's an app that
             allows you to calm your body, quiet your mind, and collect your
@@ -34,7 +45,7 @@
           Sign up today and start managing your tasks with true clarity.
         </h1>
         <button class="btn" id="get-started-btn">
-          <a href="/code/sign-up.html"></a>Get Started
+          <a href="/code/sign-up.html">Get Started</a>
         </button>
       </section>
     </main>
