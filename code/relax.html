@@ -8,10 +8,10 @@
     <title>Relaxing Meditations and Music | ClearlyPlan</title>
   </head>
   <body class="page-body" id="relax-body">
-    <header>
-      <div class="greeting"></div>
-      <nav class="navbar">
-        <ul class="nav-links" id="relax-nav">
+    <header class="page-header" id="relax-header">
+      <div class="greeting"><h1 id="header-message"></h1></div>
+      <nav class="navbar" id="relax-nav">
+        <ul class="nav-links" id="relax">
           <li><a href="/code/index.html">Home</a></li>
           <li><a href="/code/calendar.html">Calendar</a></li>
           <li><a href="/code/relax.html">Relax</a></li>
@@ -25,10 +25,42 @@
         class="page-accent"
         id="relax-accent"
       />
+      <h1 class="heading" id="relax-heading">
+        How do you want to relax today?
+      </h1>
+      <div class="options" id="relax-options">
+        <a href="">
+          <img
+            src="/assets/meditation-option-tile.png"
+            alt=""
+            class="option-tile"
+            id="meditation-tile"
+          />
+          <figcaption class="img-caption">
+            Meditation & Breathing Exercises
+          </figcaption> </a
+        ><a href="">
+          <img
+            src="/assets/music-option-tile.png"
+            alt=""
+            class="option-tile"
+            id="music-tile"
+          />
+          <figcaption class="img-caption">Calming Music</figcaption>
+        </a>
+      </div>
     </main>
-    <footer></footer>
+    <footer class="page-footer" id="relax-footer">
+      <ul class="legal">
+        <li class="legal-item">
+          &copy;2024, ClearlyPlan. All rights reserved.
+        </li>
+        <li class="legal-item">PRIVACY POLICY</li>
+        <li class="legal-item">COOKIES</li>
+      </ul>
+    </footer>
   </body>
-  <script></script>
+  <script src="/code/script.js"></script>
 </html>
 
 <!--player for breathing, meditation, etc.-->

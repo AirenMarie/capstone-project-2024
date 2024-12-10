@@ -9,8 +9,8 @@
   </head>
   <body class="page-body" id="index-body">
     <header class="page-header" id="index-header">
-      <div class="greeting"></div>
-      <nav class="navbar">
+      <div class="greeting"><h1 id="header-message"></div>
+      <nav class="navbar" id="index-nav">
         <ul class="nav-links" id="index">
           <li><a href="/code/index.html"></a>Home</li>
           <li><a href="/code/calendar.html">Plan</a></li>
@@ -25,33 +25,44 @@
         class="page-accent"
         id="index-accent"
       />
-
       <div class="container" id="welcome-block">
-        <h1 class="heading" id="welcome-heading">
-          Plan your day with a clear mind.
-        </h1>
+        <h1 id="welcome-heading">Plan your day with a clear mind.</h1>
       </div>
-      <section class="page-section" id="welcome">
-        <div class="container" id="welcome-descriptor">
+      <div class="container" id="index-main">
+        <div class="page-section" id="welcome-section">
+          <h1 class="heading" id="intro-heading">
+            ClearlyPlan is more than just a task manager.
+          </h1>
           <p>
-            ClearlyPlan is more than just a task manager. It's an app that
-            allows you to calm your body, quiet your mind, and collect your
-            thoughts so that you can focus on what really matters.
+            It's an app that allows you to calm your body, quiet your mind, and
+            collect your thoughts so that you can focus on what really matters.
           </p>
         </div>
-      </section>
-      <section class="page-section" id="take-quiz">
-        <h1 class="heading" id="sign-up-heading">
-          Sign up today and start managing your tasks with true clarity.
-        </h1>
-        <button class="btn" id="get-started-btn">
-          <a href="/code/sign-up.html">Get Started</a>
-        </button>
-      </section>
+        <div class="page-section" id="sign-up-invite">
+          <h1 class="heading" id="sign-up-heading">
+            Sign up today and start managing your tasks with true clarity.
+          </h1>
+          <button class="btn" id="get-started-btn">
+            <a href="/code/sign-up.html">Get Started</a>
+          </button>
+          <p>
+            Already have an account?
+            <a href="/code/sign-in.html">Sign in here.</a>
+          </p>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+    <footer class="page-footer" id="index-footer">
+      <ul class="legal">
+        <li class="legal-item">
+          &copy;2024, ClearlyPlan. All rights reserved.
+        </li>
+        <li class="legal-item">PRIVACY POLICY</li>
+        <li class="legal-item">COOKIES</li>
+      </ul>
+    </footer>
   </body>
-  <script></script>
+  <script src="/code/script.js"></script>
 </html>
 
 <!--header w/ navigation-->

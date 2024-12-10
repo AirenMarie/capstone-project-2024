@@ -1,0 +1,2 @@
+font-family: "ivysoft-variable", sans-serif;
+font-variation-settings: "slnt" 0, "wght" 100;

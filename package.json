@@ -1,0 +1,15 @@
+{
+  "name": "capstone",
+  "version": "1.0.0",
+  "description": "This project is a task-tracking app that also includes functions to set reminders and exercises for mindfulness and relaxation, including breathing and meditation, as well as relaxing music. # capstone-project-2024",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Airen Stringer",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "googleapis": "^144.0.0"
+  }
+}

@@ -8,10 +8,10 @@
     <title>Sign In | ClearlyPlan</title>
   </head>
   <body class="page-body" id="sign-in-body">
-    <header>
+    <header class="page-header" id="sign-in-header">
       <div class="greeting"></div>
-      <nav class="navbar">
-        <ul class="nav-links" id="sign-in-nav">
+      <nav class="navbar" id="sign-in-nav">
+        <ul class="nav-links" id="sign-in">
           <li><a href="/code/index.html"></a>Home</li>
           <li><a href="/code/calendar.html">Plan</a></li>
           <li><a href="/code/relax.html">Relax</a></li>
@@ -19,21 +19,39 @@
       </nav>
     </header>
     <main>
-      <img src="" alt="" class="page-accent" id="sign-in-accent" />
-      <div class="container" id="signin-fields">
-        <h1>Sign in to your ClearlyPlan account</h1>
-        <label for="username-email">Username/E-mail Address: </label>
-        <input
-          type="text"
-          id="username-email"
-          placeholder="Enter a username or valid e-mail address"
-        />
-        <label for="password">Password: </label>
-        <input type="password" id="password" />
-        <button class="btn" id="sign-up-btn" type="submit">Sign In</button>
+      <img
+        src="/assets/sign-in-page-image.png"
+        alt=""
+        class="page-accent"
+        id="sign-in-accent"
+      />
+      <div class="container" id="sign-in-block">
+        <h1 class="heading" id="sign-in-heading">
+          Sign in to your ClearlyPlan account
+        </h1>
+        <form action="" class="user-info" id="sign-in-form" method="post">
+          <label for="username-email">Username/E-mail Address: </label>
+          <input
+            type="text"
+            id="username-email"
+            placeholder="Enter a username or valid e-mail address"
+            class="field"
+          />
+          <label for="password">Password: </label>
+          <input type="password" id="password" class="field" />
+          <button class="btn" id="sign-in-btn" type="submit">Sign In</button>
+        </form>
       </div>
     </main>
-    <footer></footer>
+    <footer class="page-footer" id="sign-in-footer">
+      <ul class="legal">
+        <li class="legal-item">
+          &copy;2024, ClearlyPlan. All rights reserved.
+        </li>
+        <li class="legal-item">PRIVACY POLICY</li>
+        <li class="legal-item">COOKIES</li>
+      </ul>
+    </footer>
   </body>
   <script></script>
 </html>
