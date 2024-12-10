@@ -17,56 +17,11 @@
   align-items: center;
   position: fixed;
   top: 0;
-}
-
-.page-footer {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  flex-wrap: nowrap;
-  white-space: nowrap;
-  justify-content: space-evenly;
-  align-items: center;
-  position: fixed;
-  bottom: 0;
   left: 0;
 }
 
 #index-header {
-  background-color: #cbe076;
-}
-
-#index-footer {
-  background-color: #555f30;
-  color: #cbe076;
-}
-
-#relax-header {
-  background-color: #f7767f;
-}
-
-#relax-footer {
-  background-color: #789901;
-  color: #fdd8d3;
-}
-
-#sign-in-header {
-  background-color: #439e6d;
-}
-
-#sign-in-footer {
-  background-color: #cc3d7b;
-  color: #f8d4d7;
-}
-
-#sign-up-header {
-  background-color: #81944b;
-  color: #eddb74;
-}
-
-#sign-up-footer {
-  background-color: #eddb74;
-  color: #2c878c;
+  background-color: #fff6e0;
 }
 
 .page-body {
@@ -81,211 +36,41 @@
 }*/
 
 #index-body {
-  background-color: #fff6e0;
-}
-
-#relax-body {
-  background-color: #fdd8d3;
-}
-
-#sign-in-body {
-  background-color: #f8d4d7;
-}
-
-#sign-in-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #cc3d7b;
-  position: absolute;
-  top: 25%;
-  left: 44%;
-}
-
-#sign-up-body {
-  background-color: #2c878c;
-}
-
-#sign-up-block {
-  max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #eddb74;
-  position: absolute;
-  top: 25%;
-  left: 44%;
+  background-color: #cbe076;
 }
 
 .page-accent {
   width: 400px;
   height: 100%;
   object-fit: cover;
-  display: block;
   position: fixed;
   top: 10%;
   z-index: -1;
 }
 
-#index-main {
-  max-width: 500px;
-  padding-left: 75px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  position: relative;
-  left: 40%;
-}
-
 #welcome-block {
   width: 300px;
-  height: 200px;
-  margin-top: 150px;
-  position: fixed;
-  top: 5%;
+  margin-top: 125px;
+  position: relative;
+  top: 25%;
   left: 5%;
   text-align: center;
   font-size: 1.5rem;
   font-variation-settings: "slnt" 0, "wght" 500;
-  color: #fff6e0;
 }
 
-#welcome-section {
-  width: 500px;
-  margin: 10px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #555f30;
+#relax-body {
 }
 
-.heading {
-  font-size: 2.1rem;
-  font-variation-settings: "slnt" 0, "wght" 500;
-  margin: 4px;
-  text-align: center;
+/*#sign-in-body {
 }
 
-#welcome-section > p {
-  width: 500px;
-  font-size: 1.5rem;
-  font-variation-settings: "slnt" 0, "wght" 300;
-  margin: 4px;
-}
-
-#sign-up-invite {
-  width: 500px;
-  margin: 10px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #555f30;
-}
-
-#sign-up-invite > p {
-  font-size: 1rem;
-  font-variation-settings: "slnt" 0, "wght" 300;
-  margin: 4px;
-}
-
-#get-started-btn {
-  background-color: #fff6e0;
-  border-color: #555f30;
-}
-
-#get-started-btn:hover {
-  background-color: #555f30;
-}
-
-#get-started-btn > a {
-  color: #555f30;
-}
-
-#get-started-btn > a:hover {
-  color: #cbe076;
-}
-
-.user-info {
-  width: 500px;
-  padding: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: nowrap;
-  position: fixed;
-  top: 30%;
-  left: 40%;
-}
-
-#sign-in-btn {
-  background-color: #f8d4d7;
-  border-color: #cc3d7b;
-  color: #cc3d7b;
-}
-
-#sign-in-btn:hover {
-  background-color: #cc3d7b;
-  color: #f8d4d7;
-}
-
-#sign-up-btn {
-  background-color: #2c878c;
-  border-color: #eddb74;
-  color: #eddb74;
-}
-
-#sign-up-btn:hover {
-  background-color: #eddb74;
-  color: #2c878c;
-}
-
-label {
-  font-size: 1rem;
-  font-variation-settings: "slnt" 0, "wght" 400;
-  margin: 4px;
-}
-
-.btn {
-  font-family: "ivysoft-variable", sans-serif;
-  font-variation-settings: "slnt" 0, "wght" 400;
-  width: 175px;
-  height: 40px;
-  border-radius: 7px;
-  margin: 5px;
-}
-
-.btn > a {
-  font-size: 1.4rem;
-  font-variation-settings: "slnt" 0, "wght" 500;
-  text-decoration: none;
-}
-
-.field {
-  font-family: "ivysoft-variable", sans-serif;
-  font-size: 1rem;
-  font-variation-settings: "slnt" 0, "wght" 300;
-  width: 70%;
-  min-height: 2em;
-  margin: 4px;
-}
+#sign-up-body {
+}*/
 
 .greeting {
   font-size: 2rem;
   font-variation-settings: "slnt" 0, "wght" 650;
-}
-
-.legal {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.legal-item {
-  list-style: none;
-  margin: 35px 50px;
-  font-size: 1rem;
-  font-variation-settings: "slnt" 0, "wght" 300;
 }
 
 .navbar {
@@ -294,14 +79,11 @@ label {
   height: 30px;
   max-height: 50px;
   float: right;
-  position: relative;
-  right: 3%;
   font-size: 1.3rem;
   font-variation-settings: "slnt" 0, "wght" 700;
 }
 
 .navbar > ul {
-  list-style: none;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: nowrap;
@@ -314,54 +96,6 @@ label {
   text-decoration: none;
 }
 
-.option-tile {
-  width: 300px;
-}
-
-#meditation-tile {
-  margin: 0 15px 0 30px;
-}
-
-#music-tile {
-  margin: 0 30px 0 15px;
-}
-
-.options {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.options > a {
-  text-decoration: none;
-}
-
-#index {
-  color: #555f30;
-}
-
-#index > li > a {
-  color: #555f30;
-}
-
-#sign-in {
-  color: #f8d4d7;
-}
-
-#sign-in > li > a {
-  color: #f8d4d7;
-}
-
-#sign-up > li > a {
-  color: #eddb74;
-}
-
-.img-caption {
-  width: 300px;
-  font-size: 1.3rem;
-  text-align: center;
-  font-variation-settings: "slnt" 0, "wght" 400;
-}
-
 .btn {
   font-family: "ivysoft-variable", sans-serif;
   font-size: 1.7rem;
@@ -372,29 +106,6 @@ label {
   #welcome-block {
     font-size: 1.9rem;
   }
-}
-
-@media (max-width: 1023px) {
-  .page-accent {
-    display: none;
-  }
-  #welcome-block {
-    color: #555f30;
-    margin: 150px auto 10px 55px;
-    width: 600px;
-    height: 100px;
-    position: relative;
-  }
-  #index-main,
-  #sign-in-block,
-  #sign-up-block {
-    margin: 10px auto 25px 50px;
-    position: relative;
-    left: 1%;
-  }
-  #sign-in-form,
-  #sign-up-form {
-    position: relative;
-    left: 1%;
+  #index-body {
   }
 }
