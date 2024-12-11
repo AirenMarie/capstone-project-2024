@@ -40,7 +40,6 @@ function handleAuthClick() {
     if (resp.error !== undefined) {
       throw resp;
     }
-    await listUpcomingEvents();
   };
 
   if (gapi.client.getToken() === null) {
