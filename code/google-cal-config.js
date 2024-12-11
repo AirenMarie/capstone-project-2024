@@ -7,6 +7,8 @@ const DISCOVERY_DOC =
 
 const SCOPES = "https://www.googleapis.com/auth/calendar";
 
+const redirect = document.getElementById("redirect");
+
 let tokenClient;
 let gapiInited = false;
 let gisInited = false;
@@ -37,7 +39,6 @@ function handleAuthClick() {
     if (resp.error !== undefined) {
       throw resp;
     }
-    await listUpcomingEvents();
   };
 
   if (gapi.client.getToken() === null) {
@@ -46,3 +47,5 @@ function handleAuthClick() {
     on.tokenClient.requestAccessToken({ prompt: "" });
   }
 }
+
+redirect.onclick = handleAuthClick();
