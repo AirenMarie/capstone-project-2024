@@ -1,9 +1,13 @@
-const express = require("express");
-const app = express();
+let express = require("express");
+let app = express();
+
+let router = express.Router();
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send();
 });
+
+app.use("/api/", router);
 
 app.listen(5500, () => {
   console.log("Express is listening on port 5500...");
