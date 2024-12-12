@@ -1,6 +1,6 @@
-import { CLIENT_ID } from "./config.js";
+import { CLIENT_ID } from "../config.js";
 
-import { API_KEY } from "./config.js";
+import { API_KEY } from "../config.js";
 
 const DISCOVERY_DOC =
   "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest";
