@@ -33,7 +33,7 @@ function gisLoaded() {
   tokenClient = google.accounts.oauth2.initTokenClient({
     client_id: CLIENT_ID,
     scope: SCOPES,
-    callback: "", // defined later
+    callback: "",
   });
   gisInited = true;
   maybeEnableButtons();
@@ -56,18 +56,12 @@ function handleAuthClick() {
   };
 
   if (gapi.client.getToken() === null) {
-    // Prompt the user to select a Google Account and ask for consent to share their data
-    // when establishing a new session.
     tokenClient.requestAccessToken({ prompt: "consent" });
   } else {
-    // Skip display of account chooser and consent dialog for an existing session.
     tokenClient.requestAccessToken({ prompt: "" });
   }
 }
 
-/**
- *  Sign out the user upon button click.
- */
 function handleSignoutClick() {
   const token = gapi.client.getToken();
   if (token !== null) {
@@ -85,6 +79,9 @@ async function listUpcomingEvents() {
     const request = {
       calendarId: "primary",
       timeMin: new Date().toISOString(),
+      timeMax: new Date(
+        new Date().setDate(new Date().getDate() + 7)
+      ).toISOString(),
       showDeleted: false,
       singleEvents: true,
       maxResults: 10,
@@ -110,6 +107,16 @@ async function listUpcomingEvents() {
   document.getElementById("content").innerText = output;
 }
 
+function addEvents() {
+  document.getElementById("content").innerHTML = "";
+}
 
+events.forEach((event) => {
+  const eventInfo = document.createElement("p");
+  eventInfo.textContent = `${event.summary} (${
+    event.start.dateTime || event.start.date
+  })`;
+  document.getElementById("content").appendChild(eventInfo);
+});
 
-redirect.onclick = handleAuthClick();
+addEvents(events);
