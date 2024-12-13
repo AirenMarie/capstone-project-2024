@@ -9,7 +9,9 @@
   </head>
   <body class="page-body" id="calendar-body">
     <header class="page-header" id="calendar-header">
-      <div class="greeting"></div>
+      <div class="greeting">
+        <h1 class="greeting-text"></h1>
+      </div>
       <nav class="navbar" id="calendar-nav">
         <ul class="nav-links" id="calendar">
           <li><a href="/code/html/index.html"></a>Home</li>
@@ -19,6 +21,19 @@
       </nav>
     </header>
     <main>
+      <div class="container" id="sidebar">
+        <div class="container" id="upcoming-search">
+          <form action="" id="upcoming-search-form">
+            <label for="">Search for Upcoming Events</label>
+            <input
+              type="text"
+              id="upcoming_query"
+              placeholder="Search upcoming events"
+            />
+            <button class="btn" id="upcoming-search-btn">Search</button>
+          </form>
+        </div>
+      </div>
       <div class="container" id="content"></div>
     </main>
     <footer></footer>
