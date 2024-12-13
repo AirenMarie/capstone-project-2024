@@ -269,11 +269,13 @@ label {
   width: 70%;
   min-height: 2em;
   margin: 4px;
+  border: 1px solid;
+  border-radius: 5px;
 }
 
 .greeting {
-  font-size: 2rem;
-  font-variation-settings: "slnt" 0, "wght" 650;
+  font-size: 1rem;
+  font-variation-settings: "slnt" 0, "wght" 550;
 }
 
 .legal {
@@ -318,6 +320,42 @@ label {
   width: 300px;
 }
 
+#authorize_button {
+  height: 50px;
+}
+
+#authorize_button > a,
+#signout_button > a {
+  font-size: 1.1rem;
+}
+
+#signout_button {
+  visibility: hidden;
+}
+
+#cal-sign-out-block {
+  position: absolute;
+  bottom: 25%;
+  margin: 0 50px 0 50px;
+  display: flex;
+  align-items: center;
+}
+
+#authorize_button,
+#signout_button {
+  font-family: "ivysoft-variable", sans-serif;
+  font-variation-settings: "slnt" 0, "wght" 400;
+  font-size: 1.1rem;
+  width: 150px;
+}
+
+#cal-sign-in-block {
+  width: 250px;
+  height: 200px;
+  text-align: center;
+  margin: 20px 30px 0 30px;
+}
+
 #meditation-tile {
   margin: 0 15px 0 30px;
 }
@@ -343,6 +381,25 @@ label {
   color: #555f30;
 }
 
+#sidebar {
+  width: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+#sidebar-heading {
+  font-variation-settings: "slnt" 0, "wght" 400;
+  font-size: 1.3rem;
+}
+
+#sidebar-heading,
+#signout_button {
+  margin: 10px;
+}
+
 #sign-in {
   color: #f8d4d7;
 }
@@ -353,6 +410,49 @@ label {
 
 #sign-up > li > a {
   color: #eddb74;
+}
+
+#upcoming-search {
+  width: 250px;
+  height: 200px;
+  text-align: center;
+  margin: 20px 30px 0 30px;
+  visibility: hidden;
+}
+
+#upcoming-search-btn {
+  font-family: "ivysoft-variable", sans-serif;
+  font-variation-settings: "slnt" 0, "wght" 400;
+  font-size: 1.4rem;
+  width: 150px;
+  height: 30px;
+  padding-top: 4px;
+}
+
+#upcoming-search-form {
+  max-width: 200px;
+  height: 250px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#upcoming-search-form > label {
+  font-size: 1.3rem;
+}
+
+#upcoming-query {
+  font-family: "ivysoft-variable", sans-serif;
+  font-size: 1rem;
+  font-variation-settings: "slnt" 0, "wght" 300;
+  min-width: 150px;
+  min-height: 2em;
+}
+
+#upcoming-query,
+#upcoming-search-btn {
+  margin: 10px;
 }
 
 .img-caption {

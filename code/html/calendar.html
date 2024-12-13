@@ -22,16 +22,32 @@
     </header>
     <main>
       <div class="container" id="sidebar">
+        <div class="container" id="cal-sign-in-block">
+          <h2 id="sidebar-heading">
+            ClearlyPlan uses Google Calendar. If you have an account, you may
+            sign in below.
+          </h2>
+          <button class="btn" id="authorize_button">
+            <a href="">Sign In to Google Calendar</a>
+          </button>
+        </div>
         <div class="container" id="upcoming-search">
           <form action="" id="upcoming-search-form">
-            <label for="">Search for Upcoming Events</label>
+            <label for="upcoming-query">Search for Upcoming Events</label>
             <input
               type="text"
-              id="upcoming_query"
-              placeholder="Search upcoming events"
+              id="upcoming-query"
+              placeholder="Search events"
             />
-            <button class="btn" id="upcoming-search-btn">Search</button>
+            <button type="button" class="btn" id="upcoming-search-btn">
+              Search
+            </button>
           </form>
+        </div>
+        <div class="container" id="cal-sign-out-block">
+          <button type="button" class="btn" id="signout_button">
+            Sign Out
+          </button>
         </div>
       </div>
       <div class="container" id="content"></div>
@@ -39,20 +55,22 @@
     <footer></footer>
   </body>
   <script src="/code/js/app.js"></script>
-  <script src="/code/js/config.js"></script>
+  <script type="module" src="/code/js/config.js"></script>
   <script src="/code/js/script.js"></script>
-  <script src="/code/js/google_cal_config.js"></script>
+  <script type="module" src="/code/js/google-cal-config.js"></script>
   <script
     async
     defer
     src="https://apis.google.com/js/api.js"
-    onload="gapiLoaded()"
+    class="config-link"
+    id="api-config"
   ></script>
   <script
     async
     defer
     src="https://accounts.google.com/gsi/client"
-    onload="gisLoaded()"
+    class="config-link"
+    id="client-config"
   ></script>
 </html>
 
