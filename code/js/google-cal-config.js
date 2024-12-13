@@ -107,10 +107,6 @@ async function listUpcomingEvents() {
   document.getElementById("content").innerText = output;
 }
 
-function addEvents() {
-  document.getElementById("content").innerHTML = "";
-}
-
 events.forEach((event) => {
   const eventInfo = document.createElement("p");
   eventInfo.textContent = `${event.summary} (${
