@@ -10,5 +10,5 @@ app.get("/", (req, res) => {
 app.use("/api/", router);
 
 app.listen(5500, () => {
-  console.log("Express is listening on port 5500...");
+  console.log("Express is listening on http://localhost:5500...");
 });
