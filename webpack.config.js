@@ -25,3 +25,5 @@ module.exports = {
     ],
   },
 };
+
+const googleCalConfig = require("./js/google-cal-config.js");

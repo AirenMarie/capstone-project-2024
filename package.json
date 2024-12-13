@@ -2,7 +2,7 @@
   "name": "capstone",
   "version": "1.0.0",
   "description": "This project is a task-tracking app that also includes functions to set reminders and exercises for mindfulness and relaxation, including breathing and meditation, as well as relaxing music. # capstone-project-2024",
-  "main": "app.js",
+  "main": "../js/google-cal-config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
