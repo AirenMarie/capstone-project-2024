@@ -1,5 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script>
+    function gapiLoaded() {
+      gapi.load("client:auth2", initClient);
+    }
+
+    function initClient() {
+      console.log("gapi client loaded");
+    }
+
+    function gisLoaded() {
+      console.log("gis loaded");
+    }
+  </script>
+  <script
+    async
+    defer
+    src="https://apis.google.com/js/api.js"
+    id="api-config"
+  ></script>
+  <script
+    async
+    defer
+    src="https://accounts.google.com/gsi/client"
+    id="client-config"
+  ></script>
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,23 +79,9 @@
       <div class="container" id="content"></div>
     </main>
     <footer></footer>
+    <script src="/code/js/script.js"></script>
+    <script src="/code/js/google-cal-config.js"></script>
   </body>
-  <script src="/code/js/script.js"></script>
-  <script src="/code/js/app.js"></script>
-  <script src="/code/js/config.js"></script>
-  <script src="/code/js/google-cal-config.js"></script>
-  <script
-    async
-    defer
-    src="https://apis.google.com/js/api.js"
-    id="api-config"
-  ></script>
-  <script
-    async
-    defer
-    src="https://accounts.google.com/gsi/client"
-    id="client-config"
-  ></script>
 </html>
 
 <!--calendar w/ task setup and reminders-->
