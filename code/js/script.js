@@ -1,3 +1,5 @@
+/* eslint-disable no-constant-binary-expression */
+/* eslint-disable no-unused-vars */
 const greeting = document.querySelector(".greeting-text");
 const homeGreeting = document.getElementById("home-greeting");
 
