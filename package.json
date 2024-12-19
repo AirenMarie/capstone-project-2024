@@ -9,7 +9,9 @@
   "author": "Airen Stringer",
   "license": "ISC",
   "dependencies": {
+    "browserify": "^17.0.1",
     "express": "^4.21.2",
-    "googleapis": "^144.0.0"
+    "googleapis": "^144.0.0",
+    "uniq": "^1.0.1"
   }
 }
